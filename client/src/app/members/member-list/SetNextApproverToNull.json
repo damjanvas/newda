@@ -1,0 +1,1 @@
+db.Ticket.find({Status:4}).forEach(function(ticket) {var updt = db.TicketForLineManager.updateOne({OriginalTicketNumber: ticket.TicketNumber}, { $set: {NextApprover: null}});});
